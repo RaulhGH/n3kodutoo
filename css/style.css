@@ -12,7 +12,15 @@ body{
       font-style: normal;
       text-align: center;
       color: rgb(22, 99, 241);
+      position: relative;
+      animation: head;
+animation-duration: 3s;
+}
 
+@keyframes head {
+  0%{left: -1500px}
+  100%{left: 0px}
+  
 }
 
 .main{
@@ -23,6 +31,14 @@ body{
     border: 2px solid black;
     width: 200px;
     margin: 0 auto;
+    position: relative;
+    animation: top;
+    animation-duration: 3s;
+}
+
+@keyframes top {
+  0%{top: -200px}
+  100%{top: 0px}
 }
 img{
   display: block;
@@ -35,6 +51,13 @@ img{
   border: 1px solid black;
   margin: 0 auto;
   width: 400px;
+  animation: img;
+  animation-duration: 3s;
+
+}
+@keyframes img {
+0%{rotate: 90deg}
+100%{rotate: 0deg}    
 }
 .footer{
   font-family: "Jersey 15", sans-serif;
